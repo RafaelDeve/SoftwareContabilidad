@@ -47,9 +47,6 @@
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link">Cotizaciones</a>
                             </li>
-                            <li class="sidebar-item">
-                                <a href="/Ingreso_RegistroFactura/registroFactura.html" class="sidebar-link">Registro Facturas</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="sidebar-item">
@@ -98,24 +95,7 @@
                             <i class="fa-regular fa-user pe-2"></i>
                             Contabilidad
                         </a>
-
-                        
                         <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                    Registros
-                                </a>
-                                <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Registro de articulos</a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Registro de clientes</a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Registro de proveedores</a>
-                                    </li>
-                                </ul>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link">Catálogo de cuentas</a>
                             </li>
@@ -177,7 +157,30 @@
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3>Principal</h3>
+                        <h3>Registro Provedores</h3>
+
+                        <form action="">
+
+                            <label for="id">Codigo</label>
+                            <input type="text" id="codigo" required>
+
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required>
+
+                            <label for="telefono">Contacto</label>
+                            <input type="text" value="contacto" id="contacto">
+
+                            <label for="rnc">RNC</label>
+                            <select id="opciones">
+                                <option value="opcion1">Si</option>
+                                <option value="opcion2">No</option>
+                            </select>
+                            <input type="text" name="rnc" id="RNC">
+
+
+                            <input type="submit" value="Enviar" id="submit" onclick="">
+
+                        </form>
                     </div>
                 </div>
             </main>
@@ -187,6 +190,8 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="proveedores.js"></script>
+
 </body>
 
 </html>
