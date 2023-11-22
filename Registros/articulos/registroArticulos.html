@@ -110,7 +110,7 @@
                                         <a href="/Registros/articulos/registroArticulos.html" class="sidebar-link">Registro de articulos</a>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Registro de clientes</a>
+                                        <a href="/Registros/clientes/registroCliente.html" class="sidebar-link">Registro de clientes</a>
                                     </li>
                                     <li class="sidebar-item">
                                         <a href="#" class="sidebar-link">Registro de proveedores</a>
@@ -177,7 +177,36 @@
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3>Principal</h3>
+                        <h3>Registro Articulos</h3>
+                        <form action="" onsubmit="getClientInfo()">
+
+                            <label for="codigo">Codigo</label>
+                            <input type="text" id="codigo" required>
+
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required>
+
+                            <label for="price">Precio</label>
+                            <input type="text" value="" id="price">
+
+                           <label for="description">Descripcion</label>
+                           <textarea id="description"></textarea>
+
+                            <input type="button" value="Enviar" id="btn" >
+                            <button type="button" onclick="agregarInformacion()">Agregar Información</button>
+                        </form>
+
+                        <table id="tablaInformacion">
+                            <tr>
+                                
+                                <th>Código</th>
+                                <th>Nombre del articulo</th>
+                                <th>Precio</th>
+                                <th>Descripción</th>
+                                <th></th>
+                            </tr>
+                        </table>
+
                     </div>
                 </div>
             </main>
@@ -187,6 +216,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="articulos.js"></script>
 </body>
 
 </html>
