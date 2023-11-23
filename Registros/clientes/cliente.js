@@ -32,7 +32,7 @@ function agregarInformacion() {
     cell4.innerHTML = ClienteRNC;
     cell5.innerHTML = '<button onclick="eliminarFila(this)">Eliminar</button>';
 
-
+    
 
     // Limpiar el formulario
     document.getElementById('miFormulario').reset();
